@@ -189,8 +189,8 @@ The `bulk_search` function allows you to perform a bulk search for a list of pho
 import asyncio
 from truecallerpy import bulk_search
 
-phone_numbers = "+1234567890,9876543210"
-country_code = "US"
+phone_numbers = [1234567890, 9876543210]
+country_code = "1"
 installation_id = "Installation ID"
 
 response = asyncio.run(bulk_search(phone_numbers, country_code, installation_id))
